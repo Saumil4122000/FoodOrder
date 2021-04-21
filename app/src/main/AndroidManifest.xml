@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <manifest package="com.food_on.app" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_round" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:allowBackup="true">
+
+    <activity android:label="Ship Orders" android:name="com.example.foodorder.DeliveryFoodPanel.Delivery_ShippingOrder"/>
+
+    <activity android:label="Ship Orders" android:name="com.example.foodorder.DeliveryFoodPanel.DeliveryShipOrderView"/>
+
+    <activity android:label="Pending Orders" android:name="com.example.foodorder.CustomerFoodPanel.PendingOrders"/>
+
+    <activity android:name="com.example.foodorder.Delivery_FoodPanelBottomNavigation"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Delivery_SendOtp"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Delivery_ForgotPassword"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Delivery_Login"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Delivery_LoginPhone"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Delivery_VerifyPhone"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Delivery_registeration"/>
+
+    <activity android:label="Prepared Orders" android:name="com.example.foodorder.ChefFoodPanel.ChefPreparedOrderView"/>
+
+    <activity android:label="Prepared Orders" android:name="com.example.foodorder.ChefFoodPanel.ChefPreparedOrder"/>
+
+    <activity android:label="Orders to be Prepared" android:name="com.example.foodorder.ChefFoodPanel.ChefOrdertobePrepareView"/>
+
+    <activity android:label="Orders to be Prepared" android:name="com.example.foodorder.ChefFoodPanel.ChefOrderTobePrepared"/>
+
+    <activity android:label="Online Payment" android:name="com.example.foodorder.CustomerFoodPanel.CustomerPaymentOTP"/>
+
+    <activity android:label="Online Payment" android:name="com.example.foodorder.CustomerFoodPanel.CustomerOnlinePayment"/>
+
+    <activity android:label="Payable Orders" android:name="com.example.foodorder.CustomerFoodPanel.CustomerPayment"/>
+
+    <activity android:label="Payable Orders" android:name="com.example.foodorder.CustomerFoodPanel.PayableOrders"/>
+
+<!--    <activity android:label="Pending Orders" android:name="com.example.foodorder.CustomerFoodPanel.PendingOrders"/>-->
+
+    <activity android:label="Orders" android:name="com.example.foodorder.ChefFoodPanel.Chef_order_dishes"/>
+
+    <activity android:label="Mobile Number" android:name="com.example.foodorder.CustomerFoodPanel.CustomerPhoneSendOTP"/>
+
+    <activity android:label="Mobile Number" android:name="com.example.foodorder.CustomerFoodPanel.CustomerPhonenumber"/>
+
+    <activity android:label="Password" android:name="com.example.foodorder.CustomerFoodPanel.CustomerForgotpassword"/>
+
+    <activity android:label="Password" android:name="com.example.foodorder.CustomerFoodPanel.CustomerPassword"/>
+
+    <activity android:name="com.example.foodorder.CustomerFoodPanel.OrderDish"/>
+
+    <activity android:label="Home" android:name="com.example.foodorder.ChefFoodPanel.Update_Delete_Dish"/>
+
+    <activity android:label="Post Dish" android:name="com.example.foodorder.ChefFoodPanel.Chef_PostDish"/>
+
+    <activity android:name="com.example.foodorder.ChefFoodPanel_BottomNavigation" android:windowSoftInputMode="adjustNothing"/>
+
+    <activity android:name="com.example.foodorder.CustomerFoodPanel_BottomNavigation" android:windowSoftInputMode="adjustNothing"/>
+
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.MainMenu"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Chefsendotp"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Chefloginphone"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.sendotp"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.LoginPhone"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.ChefVerifyPhone"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.VerifyPhone"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.ChefForgotPassword"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.ChefLogin"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.ChooseOne"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.ChefRegisteration"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.ForgotPassword"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Login"/>
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.Registeration"/>
+
+
+    <activity android:theme="@style/AppThemeNoActionbar" android:name="com.example.foodorder.MainActivity">
+
+
+    <intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+
+    <service android:name="com.example.foodorder.SendNotification.MyFirebaseMessagingService" android:exported="true" android:enabled="true">
+
+
+    <intent-filter>
+
+    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+
+    <service android:name="com.example.foodorder.SendNotification.MyFirebaseIdService" android:exported="true" android:enabled="true">
+
+
+    <intent-filter>
+
+    <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+
+</intent-filter>
+
+</service>
+
+    <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+
+</application>
+
+</manifest>
